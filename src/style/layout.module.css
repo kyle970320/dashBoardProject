@@ -1,15 +1,21 @@
 .main {
   display: flex;
-  width: 80%;
+  margin: 0 auto;
+  width: 100%;
 }
 .main aside {
+  box-sizing: border-box;
   display: flex;
-  width: 30%;
+  padding-top: 3%;
+  padding-left: 3%;
+  width: 20%;
   flex-direction: column;
 }
 .main .container {
-  width: 70%;
+  width: 80%;
+  padding-bottom: 6%;
+  background-color: #EEE;
 }
-.main select {
+.main .select {
   width: 70%;
 }

@@ -1,0 +1,49 @@
+.status{
+  padding: 5px 10px;
+  width: 100px;
+}
+.list{
+  display: flex;
+  justify-content: center;
+  flex-wrap:wrap;
+  margin: 0 auto;
+  padding: 5% 0;
+  width: 80%;
+  background-color: white;
+  border-radius: 30px;
+  box-shadow: 0 0 20px rgba(#000,0.3);
+  .map{
+    box-sizing: border-box;
+    width: 25%;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #DDD;
+    border-radius: 25px;
+    &:hover{
+      border-color: #0094FF;
+    }
+    h3{
+      font-size: 1.3rem;
+      font-weight: bold;
+      margin-bottom: 10%;
+    }
+    dl{
+      box-sizing: border-box;
+      display: flex;
+      flex-wrap: wrap;
+      dt,dd{
+        margin-bottom: 20px;
+        padding: 1% 0;
+        border-bottom: 1px solid #DDD;
+      }
+      dt{
+        width: 50%;
+        color: #AAA;
+      }
+      dd{
+        width: 50%;
+        font-weight: bold;
+      }
+    }
+  }
+}
