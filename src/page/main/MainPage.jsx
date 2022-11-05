@@ -1,9 +1,10 @@
 import React from 'react';
+import DateApi from '../../components/DateApi';
 
 const MainPage = () => {
   return (
     <div>
-      대쉬보드
+      <DateApi></DateApi>
     </div>
   );
 };

@@ -1,0 +1,11 @@
+.dateContainer{
+  display: flex;
+  justify-content: space-between;
+  width: 9.5%;
+  .date{
+    background-color: rgba(#000,0);
+    border: none;
+    cursor: pointer;
+    width: 73px;
+  }
+}
