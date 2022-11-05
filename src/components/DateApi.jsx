@@ -1,31 +1,15 @@
 import React, { useState } from 'react';
-import ReactDatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
-import style from '../style/datepicker.module.css';
+import { useRecoilState } from 'recoil';
+import { chooseEndDate, chooseStartDate } from '../recoil/atoms';
 
 const DateApi = () => {
-  const [startDate, setStartDate] = useState(new Date("2022/02/08"));
-  const [endDate, setEndDate] = useState(new Date("2022/02/10"));
+  const [startDate, setStartDate] = useRecoilState(chooseStartDate)
+  const [endDate, setEndDate] = useRecoilState(chooseEndDate)
   return (
-    <div className={style.dateContainer}>
-      <ReactDatePicker
-        className={style.date}
-        selected={startDate}
-        onChange={(date) => setStartDate(date)}
-        selectsStart
-        startDate={startDate}
-        endDate={endDate}
-      />
-      <div>~</div>
-      <ReactDatePicker
-        className={style.date}
-        selected={endDate}
-        onChange={(date) => setEndDate(date)}
-        selectsEnd
-        startDate={startDate}
-        endDate={endDate}
-        minDate={startDate}
-      />
+    <div>
+      <input type="date" onChange={e => setStartDate(new Date(e.target.value))}/>
+      <input type="date" onChange={e => setEndDate(new Date(e.target.value))}/>
     </div>
   );
 };

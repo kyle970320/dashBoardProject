@@ -29,13 +29,13 @@ const ManagementPage = () => {
                 <dt>광고 생성일</dt>
                 <dd>{data.startDate.split('T')[0]}</dd>
                 <dt>일 희망 예산</dt>
-                <dd>{moneyCalc(data.budget)}</dd>
+                <dd>{moneyCalc(data.budget)}원</dd>
                 <dt>광고 수익률</dt>
                 <dd>{data.report.roas}%</dd>
                 <dt>매출</dt>
-                <dd>{moneyCalc(data.report.convValue)}</dd>
+                <dd>{moneyCalc(data.report.convValue)}원</dd>
                 <dt>광고 비용</dt>
-                <dd>{moneyCalc(data.report.cost)}</dd>
+                <dd>{moneyCalc(data.report.cost)}원</dd>
               </dl>
               <button>수정하기</button>
             </div>
