@@ -1,0 +1,16 @@
+.main {
+  display: flex;
+  width: 80%;
+
+  aside {
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+  }
+  .container {
+    width: 70%;
+  }
+  select{
+    width: 70%;
+  }
+}

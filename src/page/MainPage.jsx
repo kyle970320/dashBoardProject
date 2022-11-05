@@ -1,11 +1,11 @@
 import React from 'react';
 
-const App = () => {
+const MainPage = () => {
   return (
     <div>
-      asdasdfads
+      대쉬보드
     </div>
   );
 };
 
-export default App;
+export default MainPage;

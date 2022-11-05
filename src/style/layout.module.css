@@ -1,0 +1,15 @@
+.main {
+  display: flex;
+  width: 80%;
+}
+.main aside {
+  display: flex;
+  width: 30%;
+  flex-direction: column;
+}
+.main .container {
+  width: 70%;
+}
+.main select {
+  width: 70%;
+}
