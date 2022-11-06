@@ -23,7 +23,7 @@
       border-color: #0094FF;
     }
     h3{
-      font-size: 1.3rem;
+      font-size: 1.2rem;
       font-weight: bold;
       margin-bottom: 10%;
     }
@@ -45,5 +45,48 @@
         font-weight: bold;
       }
     }
+    .updateBtn{
+      border: 1px solid #999;
+      margin-left: 55%;
+      padding: 5px 10px;
+    }
+  }
+}
+
+.update{
+  position: fixed;
+  background-color: #CCC;
+  top: 25%;
+  dl{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    dt,dd{
+      box-sizing: border-box;
+      padding: 20px;
+    }
+    dt{
+      width: 25%;
+      font-size: 1.5rem;
+    }
+    dd{
+      width: 70%;
+      input{
+        width: 100%;
+        padding: 20px;
+        font-size: 1.3rem;
+      }
+    }
+  }
+  button{
+    box-sizing: border-box;
+    margin-top: 2%;
+    margin-left: 27%;
+    margin-bottom: 3%;
+    padding: 15px 20px;
+    background-color: #EEE;
+    border: 1px solid black;
+    border-radius: 10px;
   }
 }

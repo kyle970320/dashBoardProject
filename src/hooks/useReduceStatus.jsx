@@ -4,6 +4,7 @@ const useReduceStatus = (data) => {
   const [stateListStatus, setListStatus] = useState(data);
   const [stateIsLoding, setIsLoding] = useState(false);
   const reducer = (targetValue) => {
+    window.sessionStorage.setItem('managementStatus',targetValue);
     if (targetValue === 'all') {
       setIsLoding(true)
       setTimeout(()=>{
@@ -24,7 +25,7 @@ const useReduceStatus = (data) => {
       return setListStatus(data.filter(el => el.status === 'ended'));
     }
   }
-  return [stateIsLoding, stateListStatus, reducer]
+  return [stateIsLoding, stateListStatus, reducer, setListStatus]
 };
 
 export default useReduceStatus;

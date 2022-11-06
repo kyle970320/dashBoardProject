@@ -1,5 +1,6 @@
 import React from 'react';
 import DateApi from '../../components/DateApi';
+import MainChart from './MainChart';
 import MainData from './MainData';
 
 const MainPage = () => {
@@ -9,7 +10,7 @@ const MainPage = () => {
       <div>
         <MainData/> 
         <div>
-          그래프자리
+          <MainChart/>
         </div>
       </div>
     </div>

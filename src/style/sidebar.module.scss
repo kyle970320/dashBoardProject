@@ -1,0 +1,29 @@
+.side{
+  p:first-child{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20%;
+  }
+  p:nth-child(2){
+    font-size: 0.8rem;
+    color: #666;
+    margin-bottom: 5%;
+  }
+  .select{
+    width: 40%;
+    margin-bottom: 30%;
+  }
+  a{
+    width: 60%;
+    padding: 30px;
+    margin-bottom: 15%;
+    border-radius: 15px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border: 2px solid #DDD;
+    &.link{
+      background-color: #DDD;
+      color: #0094FF;
+    }
+  }
+}

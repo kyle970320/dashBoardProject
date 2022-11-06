@@ -9,3 +9,7 @@ export const chooseEndDate = atom({
   default: new Date('2022/04/20')
 })
 
+export const mainLode = atom({
+  key: 'mainLodaing',
+  default: false
+})

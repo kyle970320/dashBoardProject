@@ -26,7 +26,7 @@
   border-color: #0094FF;
 }
 .list .map h3 {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: bold;
   margin-bottom: 10%;
 }
@@ -47,4 +47,47 @@
 .list .map dl dd {
   width: 50%;
   font-weight: bold;
+}
+.list .map .updateBtn {
+  border: 1px solid #999;
+  margin-left: 55%;
+  padding: 5px 10px;
+}
+
+.update {
+  position: fixed;
+  background-color: #CCC;
+  top: 25%;
+}
+.update dl {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.update dl dt, .update dl dd {
+  box-sizing: border-box;
+  padding: 20px;
+}
+.update dl dt {
+  width: 25%;
+  font-size: 1.5rem;
+}
+.update dl dd {
+  width: 70%;
+}
+.update dl dd input {
+  width: 100%;
+  padding: 20px;
+  font-size: 1.3rem;
+}
+.update button {
+  box-sizing: border-box;
+  margin-top: 2%;
+  margin-left: 27%;
+  margin-bottom: 3%;
+  padding: 15px 20px;
+  background-color: #EEE;
+  border: 1px solid black;
+  border-radius: 10px;
 }

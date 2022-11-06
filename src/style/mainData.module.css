@@ -1,0 +1,32 @@
+.maindata {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.maindata div {
+  box-sizing: border-box;
+  width: 30%;
+  padding: 3%;
+  background-color: #FFF;
+  margin: 10px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.maindata div ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.maindata div ul li.red {
+  color: red;
+}
+.maindata div ul li.blue {
+  color: blue;
+}
+.maindata div ul li:first-child {
+  display: flex;
+  flex-wrap: wrap;
+}
+.maindata div ul li:first-child span {
+  width: 100%;
+}
